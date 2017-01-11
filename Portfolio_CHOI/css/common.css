@@ -37,7 +37,9 @@ html, body{
 }
 
 #main_name a{
+  display: block;
   color:#fff;
+  z-index:10;
 }
 
 #main_name > a > span:nth-of-type(1){
@@ -69,9 +71,14 @@ html, body{
   font-size:17px;
   font-weight: bolder;
   text-align: left;
+  transition: all 1s;
 }
 
 #main_navigation > ul > li > a:hover{
+  color:#F2AB37;
+}
+
+#main_navigation > ul > li > a.on{
   color:#F2AB37;
 }
 
@@ -87,7 +94,6 @@ html, body{
 #article_home{
   position: relative;
   width:100%;
-  height:1080px;
   background:url(../img/bg1.jpg);
   color:#fff;
 }
@@ -131,14 +137,22 @@ html, body{
 }
 
 #article_home button a{
+  display: block;
+  width:100%;
+  height:100%;
+  line-height: 50px;
   color:#fff;
+  transition: all 1s;
+}
+
+#article_home button a:hover{
+  color:#000;
 }
 
 /* article_about */
 #article_about{
   position: relative;
   width:100%;
-  height:700px;
   background: #fff;
 }
 
@@ -188,7 +202,16 @@ html, body{
 }
 
 #article_about button a{
+  display: block;
+  width:100%;
+  height:100%;
+  line-height: 50px;
   color:#fff;
+  transition: all 1s;
+}
+
+#article_about button a:hover{
+  color:#000;
 }
 
 /* article_profile */
@@ -196,7 +219,6 @@ html, body{
   position: relative;
   overflow:hidden;
   width:100%;
-  height:800px;
   background-color:#d2d2d2;
 }
 
@@ -313,14 +335,22 @@ html, body{
 }
 
 #article_profile button a{
+  display: block;
+  width:100%;
+  height:100%;
+  line-height: 50px;
   color:#fff;
+  transition: all 1s;
+}
+
+#article_profile button a:hover{
+  color:#000;
 }
 
 /* article_portfolio */
 #article_portfolio{
   position: relative;
   width:100%;
-  height:950px;
   background-color:#1C212A;
 }
 
@@ -355,6 +385,13 @@ html, body{
   float:left;
   width:25%;
   margin-bottom:30px;
+  opacity:0.5;
+  transition: all 1s;
+}
+
+#portfolio_images li:hover{
+  transform: scale(1.3);
+  opacity:1;
 }
 
 #portfolio_images li img{
@@ -376,14 +413,22 @@ html, body{
 }
 
 #article_portfolio button a{
+  display: block;
+  width:100%;
+  height:100%;
+  line-height: 50px;
   color:#fff;
+  transition: all 1s;
+}
+
+#article_portfolio button a:hover{
+  color:#000;
 }
 
 /* article_skills */
 #article_skills{
   position: relative;
   width:100%;
-  height:900px;
   background-color:#d2d2d2;
 }
 
@@ -443,14 +488,22 @@ html, body{
 }
 
 #article_skills button a{
+  display: block;
+  width:100%;
+  height:100%;
+  line-height: 50px;
   color:#fff;
+  transition: all 1s;
+}
+
+#article_skills button a:hover{
+  color:#000;
 }
 
 /* article_contact */
 #article_contact{
   position: relative;
   width:100%;
-  height:700px;
   background-color:#FFF;
 }
 
@@ -508,6 +561,11 @@ html, body{
   background: #FFC526;
   border:none;
   cursor: pointer;
+  transition: all 1s;
+}
+
+#contact_inputbox button:hover{
+  color:#000;
 }
 
 /* main_footer */

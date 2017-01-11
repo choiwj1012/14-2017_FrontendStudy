@@ -23,6 +23,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
+		<script src="js/scrollEvent.js"></script>
 	</head>
 	<body>
 
@@ -44,12 +45,12 @@
               <!-- main_navigation -->
               <nav id="main_navigation">
                   <ul>
-                      <li><a href="#article_home"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home</a></li>
-                      <li><a href="#article_about"><i class="fa fa-search" aria-hidden="true"></i> &nbsp;About Me</a></li>
-                      <li><a href="#article_profile"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;Profile</a></li>
-                      <li><a href="#article_portfolio"><i class="fa fa-picture-o" aria-hidden="true"></i> &nbsp;Portfolio</a></li>
-                      <li><a href="#article_skills"><i class="fa fa-bar-chart" aria-hidden="true"></i> &nbsp;Skills</a></li>
-                      <li><a href="#article_contact"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;Contact</a></li>
+                      <li><a class="on" href="" data-href="#article_home"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home</a></li>
+                      <li><a href="" data-href="#article_about"><i class="fa fa-search" aria-hidden="true"></i> &nbsp;About Me</a></li>
+                      <li><a href="" data-href="#article_profile"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;Profile</a></li>
+                      <li><a href="" data-href="#article_portfolio"><i class="fa fa-picture-o" aria-hidden="true"></i> &nbsp;Portfolio</a></li>
+                      <li><a href="" data-href="#article_skills"><i class="fa fa-bar-chart" aria-hidden="true"></i> &nbsp;Skills</a></li>
+                      <li><a href="" data-href="#article_contact"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;Contact</a></li>
                   </ul>
               </nav>
 
@@ -73,7 +74,7 @@
 						<img src="img/bulb.png" alt="">
 
 						<button>
-							<a href="#article_about">
+							<a href="" data-href="#article_about">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;&nbsp;About Me
 							</a>
 						</button>
@@ -94,7 +95,7 @@
 						</div>
 
 						<button>
-							<a href="#article_profile">
+							<a href="" data-href="#article_profile">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;&nbsp;Profile
 							</a>
 						</button>
@@ -182,7 +183,7 @@
 						</div>
 
 						<button>
-							<a href="#article_portfolio">
+							<a href="" data-href="#article_portfolio">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;&nbsp;Portfolio
 							</a>
 						</button>
@@ -202,35 +203,35 @@
 							<ul>
 
 								<!-- portfolio_Community -->
-								<li><img src="img/portfolio_5.png" width="250px" height="250px" alt="커뮤니티"></li>
+								<li><img src="img/ready.gif" width="250px" height="250px" alt="커뮤니티"></li>
 
 								<!-- portfolio_Bitriver -->
-								<li><img src="img/portfolio_5.png" width="250px" height="250px" alt="비트리버"></li>
+								<li><img src="img/portfolio_2.png" width="250px" height="250px" alt="비트리버"></li>
 
-								<!-- portfolio_Jiujitsu -->
-								<li><img src="img/portfolio_2.jpg" width="250px" height="250px" alt="팀소개"></li>
+								<!-- portfolio_TeamIntro -->
+								<li><img src="img/ready.gif" width="250px" height="250px" alt="팀소개"></li>
 
 								<!-- portfolio_Calculator -->
-								<li><img src="img/portfolio_5.png" width="250px" height="250px" alt="양도소득세 계산기"></li>
+								<li><img src="img/portfolio_4.jpg" width="250px" height="250px" alt="양도소득세 계산기"></li>
+
+								<!-- portfolio_Jiujitsu -->
+								<li><img src="img/portfolio_5.jpg" width="250px" height="250px" alt="주짓수 체육관"></li>
 
 								<!-- portfolio_Cosmetic -->
-								<li><img src="img/portfolio_4.png" width="250px" height="250px" alt="주짓수 체육관"></li>
+								<li><img src="img/portfolio_6.png" width="250px" height="250px" alt="Natural Cosmetic"></li>
 
 								<!-- portfolio_Coffee -->
-								<li><img src="img/portfolio_5.png" width="250px" height="250px" alt="Natural Cosmetic"></li>
-
-								<!-- portfolio_Studio -->
-								<li><img src="img/portfolio_6.png" width="250px" height="250px" alt="Natural Coffee House"></li>
+								<li><img src="img/portfolio_7.png" width="250px" height="250px" alt="Natural Coffee House"></li>
 
 								<!-- portfolio_OldPortfolio -->
-								<li><img src="img/portfolio_6.png" width="250px" height="250px" alt="Old Portfolio"></li>
+								<li><img src="img/portfolio_8.jpg" width="250px" height="250px" alt="Old Portfolio"></li>
 
 							</ul>
 
 						</div>
 
 						<button>
-							<a href="#article_skills">
+							<a href="" data-href="#article_skills">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;&nbsp;Skills
 							</a>
 						</button>
@@ -303,7 +304,7 @@
 						</div>
 
 						<button>
-							<a href="#article_contact">
+							<a href="" data-href="#article_contact">
 								<i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;&nbsp;Contact
 							</a>
 						</button>
